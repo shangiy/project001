@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>PARMS XCLUSIVE</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/style.css">
+     <style>
+          body {
+              margin: 0;
+              font-family: Arial, sans-serif;
+              background-color: #0d2b45;
+              color: #fff;
+              text-align: center;
+          }
+          .discover-container {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding-top: 100px;
+              position: absolute;
+              
+              bottom:550px ;
+              left: 50%;
+              transform: translateX(-50%);
+              z-index: 10;
+              width: 100%;
+              max-width: 800px;
+              margin-top: -550px;
+          }
+          .title {
+              font-size: 3em;
+              font-weight: bold;
+              margin-bottom: 1em;
+          }
+          .title span {
+              color: #31a2f2;
+          }
+          .search-bar {
+              display: flex;
+              align-items: center;
+              background-color: #fff;
+              border-radius: 25px;
+              padding: 10px;
+              width: 100%;
+          }
+          .search-bar select, .search-bar input {
+              border: none;
+              font-size: 1em;
+              margin-right: 10px;
+              padding: 10px;
+              flex: 1;
+              outline: none;
+          }
+          .search-bar input {
+              width: 30px;
+          }
+          .search-bar button {
+              background-color: #31a2f2;
+              border: none;
+              color: white;
+              padding: 10px 20px;
+              border-radius: 5px;
+              cursor: pointer;
+          }
+          .buttons {
+              margin-top: 1em;
+          }
+          .buttons button {
+              background-color: #31a2f2;
+              border: none;
+              color: white;
+              padding: 10px 20px;
+              border-radius: 5px;
+              cursor: pointer;
+              margin: 0 10px;
+          }
+          .buttons button:hover {
+              background-color: #1b75bb;
+          }
+         
+          #discover-section {
+              position: relative;
+              margin-bottom: 0;
+          }
+       </style>
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+               <span class="spinner-rotate"></span>
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand" style="color: white;">
+                         <img src="images/logo2.jpg" alt="PARMS XCLUSIVE CARS LTD" class="navbar-logo"> PARMS XCLUSIVE CARS LTD
+                    </a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <!-- <li class="active"><a href="index.html">Home</a></li> -->
+						 <li><a href="cars.html">Buy a Car</a></li>
+                               <li><a href="sell.html" target="_blank">Sell Your Car</a></li>
+                               <li><a href="trade-in.html" target="_blank">Trade-In Your Car</a></li>
+	                     <li><a href="about-us.html">About Us</a></li>
+                         <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Others <span class="caret"></span></a>
+                              
+                              <ul class="dropdown-menu">
+                                      <!--  <li><a href="blog-posts.html">Blog</a></li> -->
+			                         <li><a href="team.html">Team</a></li>
+			                         <li><a href="testimonials.html">Testimonials</a></li> 
+                              </ul>
+                         </li>
+                         <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+     <!-- HOME -->
+<section id="home">
+     <div class="row">
+         <div class="owl-carousel owl-theme home-slider">
+             <div class="item item-first">
+                 <div class="caption">
+                     <div class="container">
+                         <div class="col-md-6 col-sm-12">
+                             <a href="cars.html" class="section-btn btn btn-default">Browse Cars</a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+ 
+             <div class="item item-second">
+                 <div class="caption">
+                     <div class="container">
+                         <div class="col-md-6 col-sm-12">
+                             <a href="cars.html" class="section-btn btn btn-default">Browse Cars</a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+ 
+             <div class="item item-third">
+                 <div class="caption">
+                     <div class="container">
+                         <div class="col-md-6 col-sm-12">
+                             <a href="cars.html" class="section-btn btn btn-default">Browse Cars</a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+ 
+         <!-- Static Discover Section -->
+         <section id="discover-section" class="static-overlay">
+             <div class="discover-container">
+                 <div class="title">Find Your <span>Perfect Ride</span> Today!</div>
+                 <div class="search-bar" style="color: black;">
+                     <select>
+                         <option value="all-makes">All Makes</option>
+                         <option value="toyota">Toyota</option>
+                         <option value="mitsubishi">Mitsubishi</option>
+                         <option value="mazda">Mazda</option>
+                         <option value="nissan">Nissan</option>
+                         <option value="volvo">Volvo</option>
+                         <option value="volkswagen">Volkswagen</option>
+                         <option value="subaru">Subaru</option>
+                         <option value="porsche">Porsche</option>
+                         <option value="mercedes-benz">Mercedes-Benz</option>
+                         <option value="isuzu">Isuzu</option>
+                         <option value="landrover">Land Rover</option>
+                         <option value="hyundai">Hyundai</option>
+                         <option value="honda">Honda</option>
+                         <option value="lexus">Lexus</option>
+                         <option value="bmw">BMW</option>
+                         <option value="peugeot">Peugeot</option>
+                     </select>
+                     <select>
+                         <option value="all-models">All Models</option>
+                         <!-- Toyota Models -->
+                         <option value="corolla">Corolla</option>
+                         <option value="camry">Camry</option>
+                         <option value="rav4">RAV4</option>
+                         <option value="prius">Prius</option>
+                         <!-- Mitsubishi Models -->
+                         <option value="lancer">Lancer</option>
+                         <option value="outlander">Outlander</option>
+                         <option value="pajero">Pajero</option>
+                         <!-- Mazda Models -->
+                         <option value="mazda3">Mazda3</option>
+                         <option value="mazda6">Mazda6</option>
+                         <option value="cx-5">CX-5</option>
+                         <!-- Nissan Models -->
+                         <option value="altima">Altima</option>
+                         <option value="sentra">Sentra</option>
+                         <option value="rogue">Rogue</option>
+                         <!-- Volvo Models -->
+                         <option value="xc90">XC90</option>
+                         <option value="s60">S60</option>
+                         <option value="v60">V60</option>
+                         <!-- Volkswagen Models -->
+                         <option value="golf">Golf</option>
+                         <option value="passat">Passat</option>
+                         <option value="tiguan">Tiguan</option>
+                         <!-- Subaru Models -->
+                         <option value="impreza">Impreza</option>
+                         <option value="forester">Forester</option>
+                         <option value="outback">Outback</option>
+                         <!-- Porsche Models -->
+                         <option value="911">911</option>
+                         <option value="cayenne">Cayenne</option>
+                         <option value="macan">Macan</option>
+                         <!-- Mercedes-Benz Models -->
+                         <option value="c-class">C-Class</option>
+                         <option value="e-class">E-Class</option>
+                         <option value="g-class">G-Class</option>
+                         <!-- Isuzu Models -->
+                         <option value="d-max">D-Max</option>
+                         <option value="mu-x">MU-X</option>
+                         <!-- Land Rover Models -->
+                         <option value="discovery">Discovery</option>
+                         <option value="range-rover">Range Rover</option>
+                         <!-- Hyundai Models -->
+                         <option value="elantra">Elantra</option>
+                         <option value="santa-fe">Santa Fe</option>
+                         <option value="tucson">Tucson</option>
+                         <!-- Honda Models -->
+                         <option value="civic">Civic</option>
+                         <option value="accord">Accord</option>
+                         <option value="cr-v">CR-V</option>
+                         <!-- Lexus Models -->
+                         <option value="es">ES</option>
+                         <option value="rx">RX</option>
+                         <option value="nx">NX</option>
+                         <!-- BMW Models -->
+                         <option value="3-series">3 Series</option>
+                         <option value="5-series">5 Series</option>
+                         <option value="x5">X5</option>
+                         <!-- Peugeot Models -->
+                         <option value="208">208</option>
+                         <option value="3008">3008</option>
+                         <option value="5008">5008</option>
+                     </select>
+                     <select>
+                         <option value="yom">Year of Manufacture</option>
+                         <!-- Years of Manufacture from 1998 to 2023 -->
+                         <option value="1998">1998</option>
+                         <option value="1999">1999</option>
+                         <option value="2000">2000</option>
+                         <option value="2001">2001</option>
+                         <option value="2002">2002</option>
+                         <option value="2003">2003</option>
+                         <option value="2004">2004</option>
+                         <option value="2005">2005</option>
+                         <option value="2006">2006</option>
+                         <option value="2007">2007</option>
+                         <option value="2008">2008</option>
+                         <option value="2009">2009</option>
+                         <option value="2010">2010</option>
+                         <option value="2011">2011</option>
+                         <option value="2012">2012</option>
+                         <option value="2013">2013</option>
+                         <option value="2014">2014</option>
+                         <option value="2015">2015</option>
+                         <option value="2016">2016</option>
+                         <option value="2017">2017</option>
+                         <option value="2018">2018</option>
+                         <option value="2019">2019</option>
+                         <option value="2020">2020</option>
+                         <option value="2021">2021</option>
+                         <option value="2022">2022</option>
+                         <option value="2023">2023</option>
+                     </select>
+                     <button type="button">&#x1F50D;</button>
+                 </div>
+                 <div class="buttons">
+                     <a href="sell.html"><button type="button">Sell Your Car</button></a>
+                     <a href="cars.html"><button type="button">Buy a Car</button></a>
+                 </div>
+             </div>
+         </section>
+     </div>
+ </section>
+ 
+     
+
+     <main style="margin-top: 0;">
+          <section>
+               <div class="container">
+                    <div class="row">
+                         <div class="col-md-12 col-sm-12">
+                              <div class="text-center">
+                                   <h2>About us</h2>
+
+                                   <br>
+
+                                   <p class="lead">Welcome to PARMS XCLUSIVE CARS LTD, your trusted destination for quality pre-owned vehicles. With years of experience in the automotive industry, we pride ourselves on offering a wide selection of meticulously inspected and reliable cars, trucks, and SUVs. Our mission is to provide exceptional customer service and unbeatable value, ensuring every customer drives away satisfied. Whether you’re looking for a budget-friendly sedan or a luxury SUV, our knowledgeable team is here to help you find the perfect vehicle to meet your needs. At PARMS, we believe in transparency, integrity, and making the car-buying process as smooth and enjoyable as possible. Visit us today and experience the difference!</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          
+<section>
+               <div class="container">
+                    <div class="row">
+                         <div class="col-md-12 col-sm-12">
+                              <div class="section-title text-center">
+                                   <h2>Featured Cars <small>Unbeatable Offers on Our Featured Cars!</small></h2>
+                              </div>
+                         </div>
+
+                         <div class="col-md-4 col-sm-4">
+                              <div class="courses-thumb courses-thumb-secondary">
+                                   <div class="featured-tag">Featured</div>
+                                   <div class="courses-top">
+                                        <div class="courses-image">
+                                             <img src="images/picture1.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="courses-date">
+                                             <span title="Author"><i class="fa fa-dashboard"></i> 130 000km</span>
+                                             <span title="Author"><i class="fa fa-cube"></i> 1800cc</span>
+                                             <span title="Views"><i class="fa fa-cog"></i> Manual</span>
+                                        </div>
+                                   </div>
+
+                                   <div class="courses-detail">
+                                        <h3><a href="#">White Toyota Land Cruiser</a></h3>
+
+                                        <p class="lead"><small><del> ksh. 11,120,000.00</del></small> <strong>ksh. 9,480,000.00</strong></p>
+
+                                        <p>190 hp &nbsp;&nbsp;/&nbsp;&nbsp; Diesel &nbsp;&nbsp;/&nbsp;&nbsp; 2014 &nbsp;&nbsp;/&nbsp;&nbsp; Used vehicle</p>
+                                   </div>
+
+                                   <div class="courses-info">
+                                        <a href="car-details.html#vehicle1" class="section-btn btn btn-primary btn-block">View More</a>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-md-4 col-sm-4">
+                              <div class="courses-thumb courses-thumb-secondary">
+                                   <div class="featured-tag">Featured</div>
+                                   <div class="courses-top">
+                                        <div class="courses-image">
+                                             <img src="images/picture2.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="courses-date">
+                                             <span title="Author"><i class="fa fa-dashboard"></i> 130 000km</span>
+                                             <span title="Author"><i class="fa fa-cube"></i> 1800cc</span>
+                                             <span title="Views"><i class="fa fa-cog"></i> Manual</span>
+                                        </div>
+                                   </div>
+
+                                   <div class="courses-detail">
+                                        <h3><a href="#">Black Toyota Land Cruiser</a></h3>
+
+                                        <p class="lead"><small><del> ksh. 12,250,000.00</del></small> <strong>ksh. 10,950,000.00</strong></p>
+
+                                        <p>180 hp &nbsp;&nbsp;/&nbsp;&nbsp; Diesel &nbsp;&nbsp;/&nbsp;&nbsp; 2011 &nbsp;&nbsp;/&nbsp;&nbsp; Used vehicle</p>
+                                   </div>
+
+                                   <div class="courses-info">
+                                        <a href="car-details.html#vehicle2" class="section-btn btn btn-primary btn-block">View More</a>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-md-4 col-sm-4">
+                              <div class="courses-thumb courses-thumb-secondary">
+                                   <div class="featured-tag">Featured</div>
+                                   <div class="courses-top">
+                                        <div class="courses-image">
+                                             <img src="images/picture3.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="courses-date">
+                                             <span title="Author"><i class="fa fa-dashboard"></i> 130 000km</span>
+                                             <span title="Author"><i class="fa fa-cube"></i> 1800cc</span>
+                                             <span title="Views"><i class="fa fa-cog"></i> Manual</span>
+                                        </div>
+                                   </div>
+
+                                   <div class="courses-detail">
+                                        <h3><a href="#">White Toyota Land Cruiser</a></h3>
+
+                                        <p class="lead"><small><del> ksh.14,500,000.00</del></small> <strong>ksh.10,250,000.00</strong></p>
+
+                                        <p>170 hp &nbsp;&nbsp;/&nbsp;&nbsp; Diesel &nbsp;&nbsp;/&nbsp;&nbsp; 2014 &nbsp;&nbsp;/&nbsp;&nbsp; Used vehicle</p>
+                                   </div>
+
+                                   <div class="courses-info">
+                                        <a href="car-details.html#vehicle1" class="section-btn btn btn-primary btn-block">View More</a>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-md-4 col-sm-4">
+                              <div class="courses-thumb courses-thumb-secondary">
+                                   <div class="featured-tag">Featured</div>
+                                   <div class="courses-top">
+                                        <div class="courses-image">
+                                             <img src="images/picture4.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="courses-date">
+                                             <span title="Author"><i class="fa fa-dashboard"></i> 130 000km</span>
+                                             <span title="Author"><i class="fa fa-cube"></i> 1800cc</span>
+                                             <span title="Views"><i class="fa fa-cog"></i> Manual</span>
+                                        </div>
+                                   </div>
+
+                                   <div class="courses-detail">
+                                        <h3><a href="#">2010 Toyota Hillux Single Cab </a></h3>
+
+                                        <p class="lead"><small><del> ksh.5,250,000.00</del></small> <strong>ksh.3,750,000.00</strong></p>
+
+                                        <p>190 hp &nbsp;&nbsp;/&nbsp;&nbsp; Diesel &nbsp;&nbsp;/&nbsp;&nbsp; 2010 &nbsp;&nbsp;/&nbsp;&nbsp; Used vehicle</p>
+                                   </div>
+
+                                   <div class="courses-info">
+                                        <a href="car-details.html#vehicle3" class="section-btn btn btn-primary btn-block">View More</a>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-md-4 col-sm-4">
+                              <div class="courses-thumb courses-thumb-secondary">
+                                   <div class="featured-tag">Featured</div>
+                                   <div class="courses-top">
+                                        <div class="courses-image">
+                                             <img src="images/picture7.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="courses-date">
+                                             <span title="Author"><i class="fa fa-dashboard"></i> 130 000km</span>
+                                             <span title="Author"><i class="fa fa-cube"></i> 1800cc</span>
+                                             <span title="Views"><i class="fa fa-cog"></i> Manual</span>
+                                        </div>
+                                   </div>
+
+                                   <div class="courses-detail">
+                                        <h3><a href="#">2014 Toyota Hillux Single Cab</a></h3>
+
+                                        <p class="lead"><small><del> ksh4,250,000.00</del></small> <strong>ksh.1,950,000.00</strong></p>
+
+                                        <p>190 hp &nbsp;&nbsp;/&nbsp;&nbsp; Petrol &nbsp;&nbsp;/&nbsp;&nbsp; 2008 &nbsp;&nbsp;/&nbsp;&nbsp; New vehicle</p>
+                                   </div>
+
+                                   <div class="courses-info">
+                                        <a href="car-details.html#vehicle4" class="section-btn btn btn-primary btn-block">View More</a>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-md-4 col-sm-4">
+                              <div class="courses-thumb courses-thumb-secondary">
+                                   <div class="featured-tag">Featured</div>
+                                   <div class="courses-top">
+                                        <div class="courses-image">
+                                             <img src="images/picture6.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="courses-date">
+                                             <span title="Author"><i class="fa fa-dashboard"></i> 130 000km</span>
+                                             <span title="Author"><i class="fa fa-cube"></i> 1800cc</span>
+                                             <span title="Views"><i class="fa fa-cog"></i> Manual</span>
+                                        </div>
+                                   </div>
+
+                                   <div class="courses-detail">
+                                        <h3><a href="#">2008 Toyota Hillux 4x4</a></h3>
+
+                                        <p class="lead"><small><del> ksh 3,250,000.00</del></small> <strong>ksh.1,500,000.00</strong></p>
+
+                                        <p>190 hp &nbsp;&nbsp;/&nbsp;&nbsp; Petrol &nbsp;&nbsp;/&nbsp;&nbsp; 2008 &nbsp;&nbsp;/&nbsp;&nbsp; New vehicle</p>
+                                   </div>
+
+                                   <div class="courses-info">
+                                        <a href="car-details.html#vehicle4" class="section-btn btn btn-primary btn-block">View More</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          
+
+          <!--
+          <section>
+               <div class="container">
+                    <div class="row">
+                         <div class="col-md-12 col-sm-12">
+                              <div class="section-title text-center">
+                              <h2>Latest Blog posts <small>Elevate Your Drive: Discover Our Newest Selection!</small></h2>
+                              </div>
+                         </div>
+
+                         <div class="col-md-4 col-sm-4">
+                              <div class="courses-thumb courses-thumb-secondary">
+                                   <div class="courses-top">
+                                        <div class="courses-image">
+                                             <img src="images/blog-1-720x480.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="courses-date">
+                                             <span title="Author"><i class="fa fa-user"></i> Things About Cars</span>
+                                             <span title="Date"><i class="fa fa-calendar"></i> 12/06/2024</span>
+                                             <span title="Views"><i class="fa fa-eye"></i> 114</span>
+                                        </div>
+                                   </div>
+
+                                   <div class="courses-detail">
+                                        <h3><a href="blog-post-details.html">Matatus and More: Essential Tips for Navigating Kenyan Roads Learn the unspoken rules and stay safe on your Kenyan road trip!</a></h3>
+                                   </div>
+
+                                   <div class="courses-info">
+                                        <a href="blog-post-details.html" class="section-btn btn btn-primary btn-block">Read More</a>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-md-4 col-sm-4">
+                              <div class="courses-thumb courses-thumb-secondary">
+                                   <div class="courses-top">
+                                        <div class="courses-image">
+                                             <img src="images/blog-2-720x480.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="courses-date">
+                                             <span title="Author"><i class="fa fa-user"></i>Things About Cars</span>
+                                             <span title="Date"><i class="fa fa-calendar"></i> 12/06/2024</span>
+                                             <span title="Views"><i class="fa fa-eye"></i> 64</span>
+                                        </div>
+                                   </div>
+
+                                   <div class="courses-detail">
+                                        <h3><a href="blog-post-details.html">Built for Safari or City Streets?Choosing the Right Car for Kenya Land Cruiser or hatchback?We help you decide the perfect Kenyan vehicle.</a></h3>
+                                   </div>
+
+                                   <div class="courses-info">
+                                        <a href="blog-post-details.html" class="section-btn btn btn-primary btn-block">Read More</a>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="col-md-4 col-sm-4">
+                              <div class="courses-thumb courses-thumb-secondary">
+                                   <div class="courses-top">
+                                        <div class="courses-image">
+                                             <img src="images/blog-3-720x480.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="courses-date">
+                                             <span title="Author"><i class="fa fa-user"></i> Things About Cars</span>
+                                             <span title="Date"><i class="fa fa-calendar"></i> 12/06/2024 </span>
+                                             <span title="Views"><i class="fa fa-eye"></i> 254</span>
+                                        </div>
+                                   </div>
+
+                                   <div class="courses-detail">
+                                        <h3><a href="blog-post-details.html">Second-Hand Success: Finding Reliable Used Cars in Kenya Stretch your budget and find a trustworthy pre-owned car in Kenya.</a></h3>
+                                   </div>
+
+                                   <div class="courses-info">
+                                        <a href="blog-post-details.html" class="section-btn btn btn-primary btn-block">Read More</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section> 
+          -->
+
+          
+          <section id="testimonial">
+               <div class="container">
+                    <div class="row">
+
+                         <div class="col-md-12 col-sm-12">
+                              <div class="section-title text-center">
+                                   <h2>Testimonials <small>from around the world</small></h2>
+                              </div>
+
+                              <div class="owl-carousel owl-theme owl-client">
+                                   <div class="col-md-4 col-sm-4">
+                                        <div class="item">
+                                             <div class="tst-image">
+                                                  <img src="" class="img-responsive" alt="profile">
+                                             </div>
+                                             <div class="tst-author">
+                                                  <h4>Emily Akinyi</h4>
+                                                  <!-- <span>Shopify Developer</span> -->
+                                             </div>
+                                             <p>I couldn't be happier with my purchase from PARMS XCLUSIVE CARS. The service was impeccable, and the car exceeded my expectations. Highly recommend!" </p>
+                                             <div class="tst-rating">
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <div class="col-md-4 col-sm-4">
+                                        <div class="item">
+                                             <div class="tst-image">
+                                                  <img src="" class="img-responsive" alt="profile">
+                                             </div>
+                                             <div class="tst-author">
+                                                  <h4>Michael kamau</h4>
+                                                  <!-- <span>Marketing Manager</span> -->
+                                             </div>
+                                             <p>PARMS XCLUSIVE made buying a car so easy! From browsing their impressive inventory to driving off the lot, everything was smooth and professional." </p>
+                                             <div class="tst-rating">
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <div class="col-md-4 col-sm-4">
+                                        <div class="item">
+                                             <div class="tst-image">
+                                                  <img src="" class="img-responsive" alt="profile">
+                                             </div>
+                                             <div class="tst-author">
+                                                  <h4>David Wafula.</h4>
+                                                  <!-- <span>Art Director</span> -->
+                                             </div>
+                                             <p>I am thrilled with my experience at PARMS XCLUSIVE CARS. The staff was friendly and knowledgeable, and I found exactly what I was looking for." </p>
+                                             <div class="tst-rating">
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                                   <div class="col-md-4 col-sm-4">
+                                        <div class="item">
+                                             <div class="tst-image">
+                                                  <img src="" class="img-responsive" alt="profile">
+                                             </div>
+                                             <div class="tst-author">
+                                                  <h4>Jessica Naimutai</h4>
+                                                  <!-- <span>Web Developer</span> -->
+                                             </div>
+                                             <p>I had a great experience at PARMS XCLUSIVE CARS LTD. They were transparent throughout the process, and I'm loving my new car!"</p>
+                                             <div class="tst-rating">
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                                  <i class="fa fa-star"></i>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                              </div>
+                        </div>
+                    </div>
+               </div>
+          </section> 
+     </main>
+
+     <!-- CONTACT -->
+     <section id="contact">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                         <form id="contact-form" role="form" action="" method="post">
+                              <div class="section-title">
+                                   <h2>Contact us <small>we love conversations. let us talk!</small></h2>
+                              </div>
+
+                              <div class="col-md-12 col-sm-12">
+                                   <input type="text" class="form-control" placeholder="Enter full name" name="name" required>
+                    
+                                   <input type="email" class="form-control" placeholder="Enter email address" name="email" required>
+
+                                   <textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required></textarea>
+                              </div>
+
+                              <div class="col-md-4 col-sm-12">
+                                   <input type="submit" class="form-control  btn btn-success"  name="send message" value="Send Message">
+                              </div>
+
+                         </form>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="contact-image">
+                              <img src="images/contact-1-600x400.jpg" class="img-responsive" alt="contact guy">
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>       
+
+     <!-- FOOTER -->
+     <footer id="footer">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2>Headquarter</h2>
+                              </div>
+                              <address>
+                                   <p>Ring Road Ngara Roundabout, desai Rd, Ngara <br>Nairobi, KENYA</p>
+                                   <div> We also have a branch :<br> </div>
+                                   <p>Opp Sosian Secondary, along kisumu road <br>Eldoret, KENYA</p>
+                              </address>
+
+                              <ul class="social-icon">
+                                   <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <li><a href="#" class="fa fa-twitter"></a></li>
+                                   <li><a href="#" class="fa fa-instagram"></a></li>
+                                   <li><a href="#" class="fa fa-whatsapp-square" attr="whatsapp icon"></a></li>
+                              </ul>
+
+                              <div class="copyright-text"> 
+                                   <p>Copyright &copy; 2024 All Rights Reserved</p>
+                                   <!-- <p>Website by Beluga int: <a href="#">#</a></p> -->
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2>Contact Info</h2>
+                              </div>
+                              <address>
+                                   <p>+254 712 340 453</p>
+                                   <p><a href="mailto:parmexclusivecarsltd@gmail.com">parmexclusivecarsltd@gmail.com</a></p>
+                              </address>
+
+                              <div class="footer_menu">
+                                   <h2>Quick Links</h2>
+                                   <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="terms.html">Terms & Conditions</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                         <div class="footer-info newsletter-form">
+                              <div class="section-title">
+                                   <h2>Newsletter Signup</h2>
+                              </div>
+                              <div>
+                                   <div class="form-group">
+                                        <form action="#" method="get">
+                                             <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required>
+                                             <input type="submit" class="form-control" name="submit" id="form-submit" value="Send me">
+                                        </form>
+                                        <span><sup>*</sup> Please note - we do not spam your email.</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>

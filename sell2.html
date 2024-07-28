@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Car</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+            color: black;
+        }
+        .contain {
+            margin-top: 50px;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .form-header {
+            margin-bottom: 30px;
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+        }
+           
+       
+        .section-header {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid white;
+            font-size: 1.25rem;
+            color: black;
+        }
+        .promo {
+            text-align: center;
+            padding: 20px;
+        }
+        .promo img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .promo h3 {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: gray;
+        }
+        .promo p {
+            font-size: 1rem;
+            color: gray;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: #6c757d;
+            color: #fff;
+        }
+        .btn-primary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+        .btn-primary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+       
+        
+    </style>
+</head>
+<body>
+   
+</head>
+<body>
+
+    <div class="contain">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-header">
+                    <h2>Sell Your Car</h2>
+                    <p>Please fill in the form below with your car and contact details.</p>
+                </div>
+                <ul class="nav nav-tabs" id="sellCarTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="car-details-tab" data-toggle="tab" href="#car-details" role="tab" aria-controls="car-details" aria-selected="true">Car Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="seller-details-tab" data-toggle="tab" href="#seller-details" role="tab" aria-controls="seller-details" aria-selected="false">Seller Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="listing-details-tab" data-toggle="tab" href="#listing-details" role="tab" aria-controls="listing-details" aria-selected="false">Listing Details</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="sellCarTabsContent">
+                    <div class="tab-pane fade show active" id="car-details" role="tabpanel" aria-labelledby="car-details-tab">
+                        <div class="section-header">Car Details</div>
+                        <form id="carDetailsForm">
+                            <div class="form-group">
+                                <label for="carRegistrationNumber">Car Registration Number</label>
+                                <input type="text" class="form-control" id="carRegistrationNumber" placeholder="Enter car registration number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="carMake">Car Make</label>
+                                <input type="text" class="form-control" id="carMake" placeholder="Enter car make" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="carModel">Car Model</label>
+                                <input type="text" class="form-control" id="carModel" placeholder="Enter car model" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="carYear">Year</label>
+                                <input type="number" class="form-control" id="carYear" placeholder="Enter car year" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="carTransmission">Transmission Type</label>
+                                <select class="form-control" id="carTransmission" required>
+                                    <option value="">Select transmission type</option>
+                                    <option value="Automatic">Automatic</option>
+                                    <option value="Manual">Manual</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="carMileage">Mileage</label>
+                                <input type="number" class="form-control" id="carMileage" placeholder="Enter car mileage" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mileageUnits">Mileage Units</label>
+                                <select class="form-control" id="mileageUnits" required>
+                                    <option value="">Select mileage units</option>
+                                    <option value="Miles">Miles</option>
+                                    <option value="Kilometers">Kilometers</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="notableFeatures">Notable Features</label>
+                                <textarea class="form-control" id="notableFeatures" rows="3" placeholder="Enter notable features"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Accident History</label>
+                                <div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="accidentHistory" id="accidentYes" value="Yes" required>
+                                        <label class="form-check-label" for="accidentYes">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="accidentHistory" id="accidentNo" value="No" required>
+                                        <label class="form-check-label" for="accidentNo">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" onclick="validateCarDetails()">Next</button>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="seller-details" role="tabpanel" aria-labelledby="seller-details-tab">
+                        <div class="section-header">Seller Details</div>
+                        <form id="sellerDetailsForm">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="sellerEmail">Seller Email</label>
+                                <input type="email" class="form-control" id="sellerEmail" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="sellerPhone">Seller Phone</label>
+                                <input type="tel" class="form-control" id="sellerPhone" placeholder="Enter your phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Preferred Contact Method</label>
+                                <div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="contactMethod" id="contactEmail" value="Email" required>
+                                        <label class="form-check-label" for="contactEmail">Email</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="contactMethod" id="contactWhatsapp" value="WhatsApp" required>
+                                        <label class="form-check-label" for="contactWhatsapp">WhatsApp</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" onclick="validateSellerDetails()">Next</button>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="listing-details" role="tabpanel" aria-labelledby="listing-details-tab">
+                        <div class="section-header">Listing Details</div>
+                        <form id="listingDetailsForm">
+                            <div class="form-group">
+                                <label for="askingPrice">Asking Price</label>
+                                <input type="number" class="form-control" id="askingPrice" placeholder="Enter asking price" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="carPhotos">Upload Photos</label>
+                                <input type="file" class="form-control" id="carPhotos" multiple accept="image/*">
+                            </div>
+                            <div class="form-group">
+                                <label for="carDocuments">Upload Documents (PDF)</label>
+                                <input type="file" class="form-control" id="carDocuments" multiple accept="application/pdf">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="termsAndConditions" required>
+                                <label class="form-check-label" for="termsAndConditions">I agree to the terms and conditions</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 promo">
+                <img src="https://via.placeholder.com/400x300.png?text=Sell+Your+Car+Here!" alt="Sell Your Car">
+                <h3>Get the Best Value for Your Car</h3>
+                <p>List your car with us and reach thousands of potential buyers. Our easy process ensures you get the best deal quickly and effortlessly.</p>
+                <p>Start your journey today and let us help you sell your car fast and at the best price!</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_menu">
+            <h3>Quick Links</h3>
+            
+              <a href="index.html">Home</a>|
+                 <a href="about-us.html">About Us</a>|
+                 <a href="terms.html">Terms & Conditions</a>|
+                 <a href="contact.html">Contact Us</a>
+            
+       </div>
+        <p>&copy; PARMS XCLUSIVE CARS LTD. All rights reserved.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function validateCarDetails() {
+            var form = document.getElementById('carDetailsForm');
+            if (form.checkValidity()) {
+                $('#seller-details-tab').tab('show');
+            } else {
+                form.reportValidity();
+            }
+        }
+
+        function validateSellerDetails() {
+            var form = document.getElementById('sellerDetailsForm');
+            if (form.checkValidity()) {
+                $('#listing-details-tab').tab('show');
+            } else {
+                form.reportValidity();
+            }
+        }
+    </script>
+</body>
+</html>

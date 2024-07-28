@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade In Car Exchange Event</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .header, .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .main-content {
+            padding: 50px 0;
+        }
+        .event-details {
+            background-color: #fff;
+            padding: 30px;
+            /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); */
+            margin-bottom: 30px;
+        }
+        .event-details h2 {
+            margin-bottom: 20px;
+        }
+        .event-details p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .btn-primary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+        .btn-primary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+        
+        .how-it-works {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .how-it-works h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+        .step {
+            margin-bottom: 30px;
+        }
+        .step-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #666;
+            margin: 0 auto 20px auto;
+        }
+        .step-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .step-description {
+            font-size: 1rem;
+            color: #666;
+        }
+    
+    </style>
+</head>
+<body>
+    <header style="text-align: center;">
+        <h1>PARMS XCLUSIVE CARS LTD</h1>
+        <nav>
+            <a href="index.html" >Home</a> |
+            <a href="about-us.html">About Us</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 event-details">
+                    <h2>Exchange Your Car for a New One!</h2>
+                    <p>Join us for our exclusive Drive In Car Exchange! Drive in with your current car and drive out with a brand new one. Our team of experts will be on site to assist you with the exchange process and to ensure you get the best deal possible.</p>
+                    <p>Day: <strong>Monday - Friday</strong></p>
+                    <p>Time: <strong>9:00 AM - 5:30 PM</strong></p>
+                    
+                    <p>Location: <strong>Desai Rd Ngara opp Total</strong></p>
+                    <p></p>
+                    <ul>
+                        <li>Drive in with your current car.</li>
+                        <li>Get an appraisal from our experts.</li>
+                        <li>Choose your new car from a wide selection.</li>
+                        <li>Pay the difference, if necessary, and drive away in your new car!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="how-it-works">
+                <div class="container">
+                    <h2>How it works</h2>
+                    <div class="row">
+                        <div class="col-md-4 step">
+                            <div class="step-circle">1</div>
+                            <div class="step-title">Get an Instant Offer</div>
+                            <div class="step-description">
+                                Enter your License Plate or VIN to see in real-time how things like your mileage and condition affect your car's value.
+                            </div>
+                        </div>
+                        <div class="col-md-4 step">
+                            <div class="step-circle">2</div>
+                            <div class="step-title">Confirm your car's condition</div>
+                            <div class="step-description">
+                                Bring your car into the dealership for a quick side-by-side check to confirm the final value.
+                            </div>
+                        </div>
+                        <div class="col-md-4 step">
+                            <div class="step-circle">3</div>
+                            <div class="step-title">Cash out or trade-in</div>
+                            <div class="step-description">
+                                Receive your check or use your Instant Offer to trade-in your car for a new or used one.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 offset-md-2 event-details">
+                    <h2>Register for the Event</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="carMake">Current Car Make</label>
+                            <input type="text" class="form-control" id="carMake" placeholder="Enter your current car's make" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="carModel">Current Car Model</label>
+                            <input type="text" class="form-control" id="carModel" placeholder="Enter your current car's model" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="carModel">Current Registration Number</label>
+                            <input type="text" class="form-control" id="carModel" placeholder="Enter your current car's number plate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="carYear">Current Car Year</label>
+                            <input type="number" class="form-control" id="carYear" placeholder="Enter your current car's year" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="carMileage">Current Car Mileage</label>
+                            <input type="number" class="form-control" id="carMileage" placeholder="Enter your current car's mileage" required>
+                        </div>
+                       <button type="submit" class="btn btn-primary btn-block">Register Now</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 PARMS XCLUSIVE CARS LTD. All Rights Reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
